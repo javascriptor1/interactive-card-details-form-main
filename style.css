@@ -166,3 +166,26 @@ label[for="cvc-number"] {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* Desktop CSS style here ------------------ */
+
+@media (min-width: 1024px) {
+  html {
+    height: 100%;
+  }
+  body {
+   display: flex;
+   height: 120vh;
+  }
+  .card-div {
+    width: 482px;
+    height: 100%;
+  }
+  .card1 {
+    width: 93%;
+    position: absolute;
+    left: 258px;
+    top: 470px;
+}
+  
+}
