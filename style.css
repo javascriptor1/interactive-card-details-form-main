@@ -176,7 +176,7 @@ label[for="cvc-number"] {
   html {
     height: 100%;
   }
-  body {
+  main {
    display: flex;
    height: 120vh;
   }
