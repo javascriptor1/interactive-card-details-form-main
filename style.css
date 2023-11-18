@@ -38,6 +38,9 @@ body {
   left: 75px;
   top: 32px;
 }
+.card-div__top {
+  position: relative;
+}
 .card-div__zeros {
   position: absolute;
   top: 101px;
