@@ -212,11 +212,11 @@ label[for="cvc-number"] {
     height: 100vh;
   }
   .card-div {
-    width: 33.6%;
+    width: 34%;
     height: 100%;
+    background: url("images/bg-main-desktop.png");
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid yellow 3px;
   }
   .card-div__bottom {
     width: 447px;
@@ -225,7 +225,7 @@ label[for="cvc-number"] {
     position: absolute;
     left: 165px;
     top: 188px;
-}
+  }
   .card-div__white-cy {
     position: absolute;
     border-radius: 50%;
@@ -267,26 +267,55 @@ label[for="cvc-number"] {
     position: absolute;
     top: 201px;
     left: 33px;
-}
-.card-div__bottom-date {
-  position: absolute;
-  top: 198px;
-  left: 361px;
-  font-size: 17px;
-  letter-spacing: 1px;
-}
-.card-div__top {
-  width: 446px;
-  height: 245px;
-  max-width: 451px;
-  position: absolute;
-  left: 53.5%;
-  top: 39%;
-}
-.card-div__zeros {
-  position: absolute;
-  top: 45%;
-  left: 80%;
-  font-size: 16px;
-}
+    font-size: 14px;
+  }
+  .card-div__bottom-date {
+    position: absolute;
+    top: 198px;
+    left: 361px;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .card-div__top {
+    width: 446px;
+    height: 245px;
+    max-width: 451px;
+    position: absolute;
+    left: 53.5%;
+    top: 52%;
+  }
+  .card-div__zeros {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    font-size: 16px;
+  }
+  form[novalidate] {
+    padding: 1rem 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 808px;
+    top: 245px;
+    font-size: 24px;
+    width: 429px;
+  }
+  .btn-confirm {
+    width: 100%;
+    padding: 1.1rem 0.5rem;
+    margin-top: 32px;
+  }
+
+  #exp-month,
+  #exp-year,
+  #cvc-number {
+    width: 81px;
+  }
+  #cvc-number {
+    width: 189px;
+    margin-right: 0;
+  }
+  label[for="cvc-number"] {
+    margin-left: 3rem;
+  }
 }
