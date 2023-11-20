@@ -64,7 +64,7 @@ main {
   max-width: 385px;
   position: absolute;
   left: 5%;
-  top: 53%;
+  top: 51.3%;
 }
 
 .card-div__bottom-name {
@@ -209,10 +209,84 @@ label[for="cvc-number"] {
   }
   main {
     display: flex;
-    height: 120vh;
+    height: 100vh;
   }
   .card-div {
-    width: 482px;
+    width: 33.6%;
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid yellow 3px;
   }
+  .card-div__bottom {
+    width: 447px;
+    height: 244px;
+    max-width: 540px;
+    position: absolute;
+    left: 165px;
+    top: 188px;
+}
+  .card-div__white-cy {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    top: 27px;
+    left: 31px;
+  }
+  .card-div__transparent-cy {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    height: 20px;
+    width: 20px;
+    top: 42px;
+    left: 97px;
+  }
+  .first-4-nums,
+  .second-4-nums,
+  .third-4-nums,
+  .forth-4-nums {
+    top: 137px;
+    font-size: 30px;
+  }
+  .first-4-nums {
+    left: 30px;
+  }
+  .second-4-nums {
+    left: 127px;
+  }
+  .third-4-nums {
+    left: 225px;
+  }
+  .forth-4-nums {
+    left: 320px;
+  }
+  .card-div__bottom-name {
+    position: absolute;
+    top: 201px;
+    left: 33px;
+}
+.card-div__bottom-date {
+  position: absolute;
+  top: 198px;
+  left: 361px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.card-div__top {
+  width: 446px;
+  height: 245px;
+  max-width: 451px;
+  position: absolute;
+  left: 53.5%;
+  top: 39%;
+}
+.card-div__zeros {
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  font-size: 16px;
+}
 }
