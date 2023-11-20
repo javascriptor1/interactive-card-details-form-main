@@ -16,10 +16,17 @@
   --dark-grayish: hsl(279, 6%, 55%);
   --very-dark: hsl(278, 68%, 11%);
 }
+html {
+  height: 100%;
+}
 
 body {
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
+  height: 100vh;
+}
+main {
+  height: 100%;
 }
 
 .card-div {
@@ -27,24 +34,27 @@ body {
   background: url("images/bg-main-mobile.png");
   position: relative;
   background-size: cover;
-  height: 224px;
+  height: 36%;
   color: #fff;
   margin-bottom: 5.2rem;
+  border: 2px solid red;
 }
 
 .card1 {
-  width: 76%;
-  position: absolute;
-  left: 75px;
-  top: 32px;
+  width: 100%;
 }
 .card-div__top {
-  position: relative;
+  width: 282px;
+  height: 155px;
+  max-width: 385px;
+  position: absolute;
+  left: 20%;
+  top: 14%;
 }
 .card-div__zeros {
   position: absolute;
-  top: 101px;
-  left: 296px;
+  top: 45%;
+  left: 80%;
   font-size: 12px;
 }
 .card-div__bottom {
@@ -177,8 +187,8 @@ label[for="cvc-number"] {
     height: 100%;
   }
   main {
-   display: flex;
-   height: 120vh;
+    display: flex;
+    height: 120vh;
   }
   .card-div {
     width: 482px;
@@ -189,6 +199,5 @@ label[for="cvc-number"] {
     position: absolute;
     left: 258px;
     top: 470px;
-}
-  
+  }
 }
