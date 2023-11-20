@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* (active input border)*/
+  --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  /*(input errors) */
+  --red: hsl(0, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish: hsl(270, 3%, 87%);
+  --dark-grayish: hsl(279, 6%, 55%);
+  --very-dark: hsl(278, 68%, 11%);
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  height: 100vh;
+}
+main {
+  height: 100%;
+}
+
+.card-div {
+  padding: 1rem;
+  background: url("images/bg-main-mobile.png");
+  position: relative;
+  background-size: cover;
+  height: 36%;
+  color: #fff;
+  margin-bottom: 4.2rem;
+}
+
+.card1,
+.card2 {
+  width: 100%;
+  height: 100%;
+}
+.card-div__top {
+  width: 287px;
+  height: 158px;
+  max-width: 385px;
+  position: absolute;
+  left: 19.5%;
+  top: 14%;
+}
+.card-div__zeros {
+  position: absolute;
+  top: 45%;
+  left: 79%;
+  font-size: 11px;
+}
+.card-div__bottom {
+  width: 283px;
+  height: 157px;
+  max-width: 385px;
+  position: absolute;
+  left: 5%;
+  top: 53%;
+}
+
+.card-div__bottom-name {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.spacing {
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.card-div__white-cy {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 30px;
+  width: 30px;
+  top: 18px;
+  left: 18px;
+}
+.card-div__transparent-cy {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 14px;
+  width: 14px;
+  top: 26px;
+  left: 58px;
+}
+.first-4-nums,
+.second-4-nums,
+.third-4-nums,
+.forth-4-nums {
+  color: #fff;
+  position: absolute;
+  top: 83px;
+  font-size: 19px;
+}
+.first-4-nums {
+  left: 16px;
+}
+.second-4-nums {
+  left: 81px;
+}
+.third-4-nums {
+  left: 147px;
+}
+.forth-4-nums {
+  left: 210px;
+}
+.card-div__bottom-name {
+  position: absolute;
+  top: 125px;
+  left: 19px;
+}
+
+.card-div__bottom-date {
+  position: absolute;
+  top: 124px;
+  left: 233px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+form[novalidate] {
+  padding: 1rem 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+fieldset {
+  border: none;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.card-details__name {
+  padding: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid hsl(270, 3%, 87%);
+  width: 100%;
+  margin-bottom: 16px;
+}
+.card-details__number {
+  padding: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid hsl(270, 3%, 87%);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+*::placeholder {
+  font-size: 18px;
+  color: #cfcdd1;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* input field for month/year */
+#exp-month,
+#exp-year,
+#cvc-number {
+  width: 75px;
+  padding: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid hsl(270, 3%, 87%);
+  margin-right: 8px;
+}
+#cvc-number {
+  width: 154px;
+  margin-right: 0;
+}
+
+label[for="cvc-number"] {
+  margin-left: 2rem;
+}
+
+.btn-confirm {
+  width: 100%;
+  color: #fff;
+  background-color: var(--very-dark);
+  padding: 1rem 0.5rem;
+  display: block;
+  margin-top: 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Desktop CSS style here ------------------ */
+
+@media (min-width: 1024px) {
+  html {
+    height: 100%;
+  }
+  main {
+    display: flex;
+    height: 120vh;
+  }
+  .card-div {
+    width: 482px;
+    height: 100%;
+  }
+}
