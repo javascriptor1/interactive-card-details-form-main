@@ -23,7 +23,7 @@ html {
 body {
   font-size: 18px;
   font-family: "Space Grotesk", sans-serif;
-  height: 100vh;
+  height: 100%;
 }
 main {
   height: 100%;
@@ -201,9 +201,11 @@ label[for="cvc-number"] {
   cursor: pointer;
 }
 
+
+
 /* Desktop CSS style here ------------------ */
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   html {
     height: 100%;
   }
@@ -300,6 +302,8 @@ label[for="cvc-number"] {
     font-size: 24px;
     width: 429px;
   }
+
+  
   .btn-confirm {
     width: 100%;
     padding: 1.1rem 0.5rem;
@@ -312,10 +316,57 @@ label[for="cvc-number"] {
     width: 81px;
   }
   #cvc-number {
-    width: 189px;
+    width: 192px;
     margin-right: 0;
   }
   label[for="cvc-number"] {
     margin-left: 3rem;
   }
+}
+
+/* Complete div styling for mobile screen*/
+
+.complete-div {
+  text-align: center;
+  margin-top: 88px;
+  padding: 0 25px;
+  display: none;
+}
+.complete-div__thank-you {
+  font-size: 30px;
+  margin-top: 30px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #17092b;
+  letter-spacing: 2px;
+}
+.complete-div__confirmation-msg {
+  position: relative;
+  top: 15px;
+  color: var(--dark-grayish);
+}
+.complete-div__continue-btn {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 6px;
+  margin-top: 4rem;
+  color: #fff;
+  background-color: var(--very-dark);
+  display: block;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) and (max-width:1439px){
+  form[novalidate] {
+    width: 50%;
+    margin: auto;
+  }
+
 }
