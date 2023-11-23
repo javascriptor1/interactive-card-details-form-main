@@ -10,7 +10,7 @@
   /* (active input border)*/
   --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
   /*(input errors) */
-  --red: hsl(0, 100%, 66%);
+  --red: #ff5252;
   --white: hsl(0, 0%, 100%);
   --light-grayish: hsl(270, 3%, 87%);
   --dark-grayish: hsl(279, 6%, 55%);
@@ -27,6 +27,16 @@ body {
 }
 main {
   height: 100%;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  border-image-source: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+  border-width: 2px;
+  border-image-slice: 1;
 }
 
 .card-div {
@@ -170,9 +180,9 @@ label {
 }
 
 /* input field for month/year */
-#exp-month,
-#exp-year,
-#cvc-number {
+.exp-month,
+.exp-year,
+.cvc-number {
   width: 75px;
   padding: 0.9rem;
   border-radius: 6px;
@@ -200,8 +210,6 @@ label[for="cvc-number"] {
   font-size: 20px;
   cursor: pointer;
 }
-
-
 
 /* Desktop CSS style here ------------------ */
 
@@ -303,7 +311,6 @@ label[for="cvc-number"] {
     width: 429px;
   }
 
-  
   .btn-confirm {
     width: 100%;
     padding: 1.1rem 0.5rem;
@@ -311,8 +318,7 @@ label[for="cvc-number"] {
   }
 
   #exp-month,
-  #exp-year,
-  #cvc-number {
+  #exp-year {
     width: 81px;
   }
   #cvc-number {
@@ -363,10 +369,53 @@ label[for="cvc-number"] {
   letter-spacing: 1px;
 }
 
-@media (min-width: 768px) and (max-width:1439px){
+@media (min-width: 768px) and (max-width: 1439px) {
   form[novalidate] {
     width: 50%;
     margin: auto;
   }
+}
 
+/* Javascript manuplication classes  */
+
+.border {
+  border: 1px solid #ff5252 !important;
+  border-image-source: #ff5252;
+  border-width: 2px;
+  border-image-slice: 1;
+}
+
+.red-error-div {
+  position: relative;
+}
+
+.errorMsgNumbers,
+.error-month,
+.error-year,
+.error-cvc,
+.username-blank-error {
+  color: var(--red);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: initial;
+  letter-spacing: 0;
+  position: absolute;
+  top: 0px;
+  visibility: hidden;
+}
+
+.errorMsgNumbers2,
+.username-blank-error {
+  position: relative;
+  top: -8px;
+}
+
+.error-month,
+.error-year,
+.error-cvc {
+  visibility: visible;
+}
+
+.error-cvc {
+  left: 52%;
 }
