@@ -19,6 +19,7 @@ const errorMsgNumbers = document.querySelector(".errorMsgNumbers2");
 const errorMonth = document.querySelector(".error-month");
 const errorYear = document.querySelector(".error-year");
 const errorCvc = document.querySelector(".error-cvc");
+const completeDiv = document.querySelector(".complete-div");
 
 userNameInput.addEventListener("input", function () {
   if (userNameInput.value === "") {
@@ -196,4 +197,36 @@ function addCard(e) {
   } else {
     cvcInput.classList.remove("border");
   }
+
+  function checkEmptyInput() {
+    const allInput = document.getElementsByTagName("input");
+    for (let i = 0; i < allInput.length; i++) {
+      if (allInput[i].value === "") {
+        return false;
+      }
+    }
+    return true;
+  }
+  if (
+    checkEmptyInput() &&
+    validateCardNumberInput() &&
+    validateMonthInput() &&
+    validateYearInput() &&
+    validatCvcInput()
+  ) {
+    const allInput = document.getElementsByTagName("input");
+    for (let i = 0; i < allInput.length; i++) {
+      allInput[i].value = "";
+    }
+
+    mainForm.style.display = "none";
+    completeDiv.style.display = "block";
+  }
+}
+
+continueBtn.addEventListener("click", continueFunc);
+
+function continueFunc() {
+  mainForm.style.display = "block";
+  completeDiv.style.display = "none";
 }

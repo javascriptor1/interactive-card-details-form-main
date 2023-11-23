@@ -53,7 +53,9 @@
               <span class="forth-4-nums spacing">0000</span>
             </p>
             <p class="card-div__bottom-name">Jane Appleseed</p>
-            <p class="card-div__bottom-date"><span id="month">00</span>/<span id="year">00</span></p>
+            <p class="card-div__bottom-date">
+              <span id="month">00</span>/<span id="year">00</span>
+            </p>
           </div>
         </div>
       </div>
@@ -67,6 +69,7 @@
               id="card-holder-name"
               class="card-details__name"
               maxlength="24"
+              autocomplete="cc-name"
             />
             <p class="username-blank-error">Can't be blank</p>
             <div><label for="card-number">Card Number</label></div>
@@ -78,7 +81,9 @@
               class="card-details__number"
               maxlength="16"
             />
-            <p class="errorMsgNumbers errorMsgNumbers2">Wrong format, numbers only</p>
+            <p class="errorMsgNumbers errorMsgNumbers2">
+              Wrong format, numbers only
+            </p>
             <div>
               <label
                 >Exp. Date (<label for="exp-month">MM</label>/<label
@@ -89,15 +94,32 @@
               <label for="cvc-number">CVC</label>
             </div>
             <div>
-              <input type="text" id="exp-month" placeholder="MM" maxlength="2" class="exp-month"/>
-              <input type="text" id="exp-year" placeholder="YY" maxlength="2" class="exp-year"/>
-              <input type="text" placeholder="e.g. 123" id="cvc-number" maxlength="3" class="cvc-number"/>
+              <input
+                type="text"
+                id="exp-month"
+                placeholder="MM"
+                maxlength="2"
+                class="exp-month"
+              />
+              <input
+                type="text"
+                id="exp-year"
+                placeholder="YY"
+                maxlength="2"
+                class="exp-year"
+              />
+              <input
+                type="text"
+                placeholder="e.g. 123"
+                id="cvc-number"
+                maxlength="3"
+                class="cvc-number"
+              />
               <div class="red-error-div">
                 <span class="error-month"></span>
                 <span class="error-year"></span>
                 <span class="error-cvc"></span>
               </div>
-
             </div>
           </fieldset>
           <button id="confirm-btn" class="btn-confirm">Confirm</button>
